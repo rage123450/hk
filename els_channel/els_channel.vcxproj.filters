@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Common">
+      <UniqueIdentifier>{4217c068-acd9-4f77-9911-9066988103fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Packet">
+      <UniqueIdentifier>{5a17e1c6-efe0-4383-9273-53d965f872e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Handlers">
+      <UniqueIdentifier>{d9a24d14-5093-49c2-84b8-f895081d46bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Common">
+      <UniqueIdentifier>{e75608d8-d0ea-41f1-b290-f472efc9d031}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Packet">
+      <UniqueIdentifier>{cf1ed9e0-b5b1-4869-b094-467af2818f9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Handlers">
+      <UniqueIdentifier>{608f4426-bb49-4c82-9ef5-b36db210e06c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Common\Server">
+      <UniqueIdentifier>{cba52565-7155-4205-8b34-f74ba46cd74d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Common\Tools">
+      <UniqueIdentifier>{e322562f-54c1-414d-898b-9508f9f8aeef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game">
+      <UniqueIdentifier>{5bec9931-3ff6-4760-a7da-2f5b6ac01497}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game">
+      <UniqueIdentifier>{4960fa02-3e20-48a4-82b8-a226ec5e877a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Common\Server">
+      <UniqueIdentifier>{44f167aa-4673-45f9-961e-9cd52526fcfd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Providers">
+      <UniqueIdentifier>{82f70596-c2f4-4bb3-b66d-2031b26b07b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Providers">
+      <UniqueIdentifier>{2d669298-58aa-4718-930a-aa7d54c7e8f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Common\Lua">
+      <UniqueIdentifier>{f9ac5e6f-aa46-4249-9da4-f8b403556af6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Common\Tools">
+      <UniqueIdentifier>{5feaf31f-b43d-4f0d-a2a8-d5bb8ee1d9fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Common\Lua">
+      <UniqueIdentifier>{3bf44110-6a21-4d3b-aa8e-24563177a193}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChannelHandler.cpp">
+      <Filter>Source Files\Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="AuthPacket.cpp">
+      <Filter>Source Files\Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="ChannelServerHandler.cpp">
+      <Filter>Source Files\Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="AuthHandler.cpp">
+      <Filter>Source Files\Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="Config.cpp">
+      <Filter>Source Files\Common\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Connection.cpp">
+      <Filter>Source Files\Common\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Constants.cpp">
+      <Filter>Source Files\Common\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Crypto.cpp">
+      <Filter>Source Files\Common\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Database.cpp">
+      <Filter>Source Files\Common\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="PacketBuilder.cpp">
+      <Filter>Source Files\Common\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="PacketReader.cpp">
+      <Filter>Source Files\Common\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Server.cpp">
+      <Filter>Source Files\Common\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Random.cpp">
+      <Filter>Source Files\Common\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Inventory.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Item.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Skill.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Time.cpp">
+      <Filter>Source Files\Common\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="CharacterPacket.cpp">
+      <Filter>Source Files\Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="CharacterHandler.cpp">
+      <Filter>Source Files\Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="InventoryHandler.cpp">
+      <Filter>Source Files\Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="InventoryPacket.cpp">
+      <Filter>Source Files\Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="ChannelPacket.cpp">
+      <Filter>Source Files\Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageHandler.cpp">
+      <Filter>Source Files\Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="MessagePacket.cpp">
+      <Filter>Source Files\Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="DungeonHandler.cpp">
+      <Filter>Source Files\Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="DungeonPacket.cpp">
+      <Filter>Source Files\Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldPacket.cpp">
+      <Filter>Source Files\Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldHandler.cpp">
+      <Filter>Source Files\Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="Map.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="MapDataProvider.cpp">
+      <Filter>Source Files\Providers</Filter>
+    </ClCompile>
+    <ClCompile Include="DungeonDataProvider.cpp">
+      <Filter>Source Files\Providers</Filter>
+    </ClCompile>
+    <ClCompile Include="SkillInventory.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="SkillHandler.cpp">
+      <Filter>Source Files\Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="SkillPacket.cpp">
+      <Filter>Source Files\Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="LuaScript.cpp">
+      <Filter>Source Files\Common\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemDataProvider.cpp">
+      <Filter>Source Files\Providers</Filter>
+    </ClCompile>
+    <ClCompile Include="GameConnection.cpp">
+      <Filter>Source Files\Common\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="World.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Party.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="PVPHandler.cpp">
+      <Filter>Source Files\Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="PVPPacket.cpp">
+      <Filter>Source Files\Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="PVP.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Converter.cpp">
+      <Filter>Source Files\Common\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="PartyPacket.cpp">
+      <Filter>Source Files\Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="QuestPacket.cpp">
+      <Filter>Source Files\Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="PVPRoom.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ChannelHandler.hpp">
+      <Filter>Header Files\Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="AuthPacket.hpp">
+      <Filter>Header Files\Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="ChannelServerHandler.hpp">
+      <Filter>Header Files\Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="AuthHandler.hpp">
+      <Filter>Header Files\Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="Inventory.hpp">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Item.hpp">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.hpp">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Skill.hpp">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Config.hpp">
+      <Filter>Header Files\Common\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Connection.hpp">
+      <Filter>Header Files\Common\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Constants.hpp">
+      <Filter>Header Files\Common\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Crypto.hpp">
+      <Filter>Header Files\Common\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Database.hpp">
+      <Filter>Header Files\Common\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="PacketBuilder.hpp">
+      <Filter>Header Files\Common\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="PacketReader.hpp">
+      <Filter>Header Files\Common\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Server.hpp">
+      <Filter>Header Files\Common\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Random.hpp">
+      <Filter>Header Files\Common\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="Time.hpp">
+      <Filter>Header Files\Common\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="SendOpcode.hpp">
+      <Filter>Header Files\Common\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="RecvOpcode.hpp">
+      <Filter>Header Files\Common\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="CharacterPacket.hpp">
+      <Filter>Header Files\Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="CharacterHandler.hpp">
+      <Filter>Header Files\Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="InventoryPacket.hpp">
+      <Filter>Header Files\Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="InventoryHandler.hpp">
+      <Filter>Header Files\Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="ChannelPacket.hpp">
+      <Filter>Header Files\Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageHandler.hpp">
+      <Filter>Header Files\Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="MessagePacket.hpp">
+      <Filter>Header Files\Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="DungeonHandler.hpp">
+      <Filter>Header Files\Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="DungeonPacket.hpp">
+      <Filter>Header Files\Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldHandler.hpp">
+      <Filter>Header Files\Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldPacket.hpp">
+      <Filter>Header Files\Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="Map.hpp">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="MapDataProvider.hpp">
+      <Filter>Header Files\Providers</Filter>
+    </ClInclude>
+    <ClInclude Include="DungeonDataProvider.hpp">
+      <Filter>Header Files\Providers</Filter>
+    </ClInclude>
+    <ClInclude Include="SkillInventory.hpp">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="SkillHandler.hpp">
+      <Filter>Header Files\Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="SkillPacket.hpp">
+      <Filter>Header Files\Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="LuaScript.hpp">
+      <Filter>Header Files\Common\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemDataProvider.hpp">
+      <Filter>Header Files\Providers</Filter>
+    </ClInclude>
+    <ClInclude Include="GameConnection.hpp">
+      <Filter>Header Files\Common\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="World.hpp">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Party.hpp">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="PVPHandler.hpp">
+      <Filter>Header Files\Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="PVPPacket.hpp">
+      <Filter>Header Files\Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="PVP.hpp">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Converter.hpp">
+      <Filter>Header Files\Common\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="PartyPacket.hpp">
+      <Filter>Header Files\Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="QuestPacket.hpp">
+      <Filter>Header Files\Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="PVPRoom.hpp">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Icon.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

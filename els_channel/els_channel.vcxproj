@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EBA2DD7A-6196-4098-9877-D5EA51C8D77C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>els_channel</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\lib\boost;C:\lib\mysql-connector-c++-noinstall-1.1.3-win32\include;C:\lib\mysql-5.5.24-win32\include;C:\lib\cryptopp;C:\lib\lua5.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\lib\lua5.1\bin;C:\lib\mysql-connector-c++-noinstall-1.1.3-win32\lib;C:\lib\mysql-5.5.24-win32\lib;C:\lib\boost\lib32-msvc-12.0;C:\lib\cryptopp\Win32\DLL_Output\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>mysqlcppconn.lib;libmysql.lib;libboost_system-vc120-mt-gd-1_55.lib;libboost_date_time-vc120-mt-gd-1_55.lib;cryptlib.lib;cryptopp.lib;lua51.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AuthHandler.cpp" />
+    <ClCompile Include="AuthPacket.cpp" />
+    <ClCompile Include="ChannelHandler.cpp" />
+    <ClCompile Include="ChannelPacket.cpp" />
+    <ClCompile Include="ChannelServerHandler.cpp" />
+    <ClCompile Include="CharacterHandler.cpp" />
+    <ClCompile Include="CharacterPacket.cpp" />
+    <ClCompile Include="Config.cpp" />
+    <ClCompile Include="Connection.cpp" />
+    <ClCompile Include="Constants.cpp" />
+    <ClCompile Include="Converter.cpp" />
+    <ClCompile Include="Crypto.cpp" />
+    <ClCompile Include="Database.cpp" />
+    <ClCompile Include="DungeonDataProvider.cpp" />
+    <ClCompile Include="DungeonHandler.cpp" />
+    <ClCompile Include="DungeonPacket.cpp" />
+    <ClCompile Include="FieldHandler.cpp" />
+    <ClCompile Include="FieldPacket.cpp" />
+    <ClCompile Include="GameConnection.cpp" />
+    <ClCompile Include="Inventory.cpp" />
+    <ClCompile Include="Item.cpp" />
+    <ClCompile Include="InventoryHandler.cpp" />
+    <ClCompile Include="InventoryPacket.cpp" />
+    <ClCompile Include="ItemDataProvider.cpp" />
+    <ClCompile Include="LuaScript.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Map.cpp" />
+    <ClCompile Include="MapDataProvider.cpp" />
+    <ClCompile Include="MessageHandler.cpp" />
+    <ClCompile Include="MessagePacket.cpp" />
+    <ClCompile Include="PacketBuilder.cpp" />
+    <ClCompile Include="PacketReader.cpp" />
+    <ClCompile Include="Party.cpp" />
+    <ClCompile Include="PartyPacket.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="PVP.cpp" />
+    <ClCompile Include="PVPHandler.cpp" />
+    <ClCompile Include="PVPPacket.cpp" />
+    <ClCompile Include="PVPRoom.cpp" />
+    <ClCompile Include="QuestPacket.cpp" />
+    <ClCompile Include="Random.cpp" />
+    <ClCompile Include="Server.cpp" />
+    <ClCompile Include="Skill.cpp" />
+    <ClCompile Include="SkillHandler.cpp" />
+    <ClCompile Include="SkillInventory.cpp" />
+    <ClCompile Include="SkillPacket.cpp" />
+    <ClCompile Include="Time.cpp" />
+    <ClCompile Include="World.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AuthHandler.hpp" />
+    <ClInclude Include="AuthPacket.hpp" />
+    <ClInclude Include="ChannelHandler.hpp" />
+    <ClInclude Include="ChannelPacket.hpp" />
+    <ClInclude Include="ChannelServerHandler.hpp" />
+    <ClInclude Include="CharacterHandler.hpp" />
+    <ClInclude Include="CharacterPacket.hpp" />
+    <ClInclude Include="Config.hpp" />
+    <ClInclude Include="Connection.hpp" />
+    <ClInclude Include="Constants.hpp" />
+    <ClInclude Include="Converter.hpp" />
+    <ClInclude Include="Crypto.hpp" />
+    <ClInclude Include="Database.hpp" />
+    <ClInclude Include="DungeonDataProvider.hpp" />
+    <ClInclude Include="DungeonHandler.hpp" />
+    <ClInclude Include="DungeonPacket.hpp" />
+    <ClInclude Include="GameConnection.hpp" />
+    <ClInclude Include="ItemDataProvider.hpp" />
+    <ClInclude Include="LuaScript.hpp" />
+    <ClInclude Include="Map.hpp" />
+    <ClInclude Include="FieldHandler.hpp" />
+    <ClInclude Include="FieldPacket.hpp" />
+    <ClInclude Include="InventoryHandler.hpp" />
+    <ClInclude Include="InventoryPacket.hpp" />
+    <ClInclude Include="MapDataProvider.hpp" />
+    <ClInclude Include="MessageHandler.hpp" />
+    <ClInclude Include="MessagePacket.hpp" />
+    <ClInclude Include="Party.hpp" />
+    <ClInclude Include="PartyPacket.hpp" />
+    <ClInclude Include="PVP.hpp" />
+    <ClInclude Include="PVPHandler.hpp" />
+    <ClInclude Include="PVPPacket.hpp" />
+    <ClInclude Include="PVPRoom.hpp" />
+    <ClInclude Include="QuestPacket.hpp" />
+    <ClInclude Include="RecvOpcode.hpp" />
+    <ClInclude Include="Inventory.hpp" />
+    <ClInclude Include="Item.hpp" />
+    <ClInclude Include="SendOpcode.hpp" />
+    <ClInclude Include="PacketBuilder.hpp" />
+    <ClInclude Include="PacketReader.hpp" />
+    <ClInclude Include="Player.hpp" />
+    <ClInclude Include="Random.hpp" />
+    <ClInclude Include="Server.hpp" />
+    <ClInclude Include="Skill.hpp" />
+    <ClInclude Include="SkillHandler.hpp" />
+    <ClInclude Include="SkillInventory.hpp" />
+    <ClInclude Include="SkillPacket.hpp" />
+    <ClInclude Include="Time.hpp" />
+    <ClInclude Include="World.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Icon.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

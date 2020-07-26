@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Common">
+      <UniqueIdentifier>{fa7cb9c9-2b62-4c49-aed5-4f0147a17f77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Login">
+      <UniqueIdentifier>{0fc630ac-7e1a-41ea-a098-966d93f779dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Common">
+      <UniqueIdentifier>{51a89819-3d39-4947-9aae-05abc9c4acde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Login">
+      <UniqueIdentifier>{f3371090-9752-4b99-92f0-04d18e3787b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Login\Packet">
+      <UniqueIdentifier>{aad77013-42c1-4015-9969-e1ba74865ade}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Login\Packet">
+      <UniqueIdentifier>{b6a3504d-df42-44da-aa7a-1a474a3bed14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Common\Server">
+      <UniqueIdentifier>{07911e6f-f60f-4e1c-b6bc-0f948c0cf92b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Common\Tools">
+      <UniqueIdentifier>{9f7272cb-0917-40e2-aaea-692f5b196517}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Common\Server">
+      <UniqueIdentifier>{37a84553-b982-4691-9513-04a78082b079}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Common\Tools">
+      <UniqueIdentifier>{1da4909c-0d1a-406c-9066-5a2a004eee9a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginPacket.cpp">
+      <Filter>Source Files\Login\Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginOpcode.cpp">
+      <Filter>Source Files\Login\Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginServerHandler.cpp">
+      <Filter>Source Files\Login\Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginHandler.cpp">
+      <Filter>Source Files\Login\Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="Config.cpp">
+      <Filter>Source Files\Common\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Connection.cpp">
+      <Filter>Source Files\Common\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Constants.cpp">
+      <Filter>Source Files\Common\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Crypto.cpp">
+      <Filter>Source Files\Common\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Database.cpp">
+      <Filter>Source Files\Common\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="PacketBuilder.cpp">
+      <Filter>Source Files\Common\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="PacketReader.cpp">
+      <Filter>Source Files\Common\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Server.cpp">
+      <Filter>Source Files\Common\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Random.cpp">
+      <Filter>Source Files\Common\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Time.cpp">
+      <Filter>Source Files\Common\Tools</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="LoginPacket.hpp">
+      <Filter>Header Files\Login\Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginOpcode.hpp">
+      <Filter>Header Files\Login\Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginServerHandler.hpp">
+      <Filter>Header Files\Login\Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginHandler.hpp">
+      <Filter>Header Files\Login\Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="Config.hpp">
+      <Filter>Header Files\Common\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Connection.hpp">
+      <Filter>Header Files\Common\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Constants.hpp">
+      <Filter>Header Files\Common\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Crypto.hpp">
+      <Filter>Header Files\Common\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Database.hpp">
+      <Filter>Header Files\Common\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="PacketBuilder.hpp">
+      <Filter>Header Files\Common\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="PacketReader.hpp">
+      <Filter>Header Files\Common\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Server.hpp">
+      <Filter>Header Files\Common\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Random.hpp">
+      <Filter>Header Files\Common\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="Time.hpp">
+      <Filter>Header Files\Common\Tools</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Icon.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
