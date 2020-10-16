@@ -14,4 +14,6 @@ you can enter town map / go to other town map / dungeon gate
 
 enter pvp room dungeon 1-1 and i forget
 
+client
+
 https://d3vsite.org/Releases/ElswordHK-2010.7z
